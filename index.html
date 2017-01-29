@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"/>
+    <title>POSTER GALLERY</title>
+    <link rel="stylesheet" href="css/index.css"/>
+
+</head>
+<body onselectstart="return false">
+<div class="wrap" id="wrap">
+    <div id="photo_{{index}}" class="photo photo_front">
+        <div class="photo-wrap">
+            <div class="side side-front">
+                <p class="image"><img src="assets/imgs/{{img}}"/></p>
+                <p class="caption">{{caption}}</p>
+            </div>
+            <div class="side side-back">
+                <p class="desc">{{desc}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mode">
+    <nav>
+        <span class=" selected style" id="hash">散列模式</span>
+        <span class=" style" id="annular">环形模式</span>
+        <span class=" selected style" id="start">开始</span>
+        <span class=" style" id="end">结束</span>
+    </nav>
+</div>
+
+
+<script src="js/require.js" data-main="js/main"></script>
+</body>
+</html>
