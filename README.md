@@ -1,2 +1,2 @@
-# POSTER_GALLERY
+# POSTER GALLERY
 参考慕课网的散列海报的教程视频,自己再加了点修改,除了散列分布,还可以支持环形分布,还有就是加了自动轮询播放的功能,还有就是用到了requirejs封装js成了几个模块,还用到了sass编写css文件
