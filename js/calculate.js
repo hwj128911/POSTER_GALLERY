@@ -5,6 +5,7 @@
  * 计算模块
  */
 define(['obtain'], function (obtain) {
+
     var random = function (range) {
         var max = Math.max(range[0], range[1]);
         var min = Math.min(range[0], range[1]);
@@ -13,7 +14,12 @@ define(['obtain'], function (obtain) {
         return Math.floor(Math.random() * diff + min);
     };
 
-//    计算所有分区的范围
+
+    /**
+     * 计算所有分区的范围
+     * 
+     * @returns
+     */
     var range = function () {
         var ranges = {x: [], y: []};
         var wrapBody = obtain.g('#wrap');

@@ -11,23 +11,26 @@ $photo-height: 350px;
     font-weight: normal;
     font-style: normal;
 }
-body{
+
+body {
     background-color: #eeeeee;
     color: #555;
 
-    font-family:'Avenir Next','Lantinghei SC',monospace;
+    font-family: 'Avenir Next', 'Lantinghei SC', monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 * {
     margin: 0;
     padding: 0;
 }
-.mode{
+
+.mode {
     position: absolute;
     width: 100%;
     height: 30px;
-    nav{
+    nav {
         margin: 0 auto;
         color: #000;
         font-size: 18px;
@@ -37,11 +40,12 @@ body{
         display: flex;
         justify-content: space-around;
 
-        .style{
+        .style {
             padding: {
                 left: 20px;
                 right: 20px;
-            };
+            }
+        ;
             margin-top: 10px;
             background-color: #ffffff;
             border-radius: 3px;
@@ -54,16 +58,18 @@ body{
                 duration: .3s;
                 timing-function: ease;
                 delay: 0s;
-            };
+            }
+        ;
         }
 
-        .selected{
-            text-shadow: 2px 2px 5px rgba(0,0,0,.3);
-            box-shadow: 1px 1px 10px rgba(0,0,0,.2);
+        .selected {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
             color: #ee4d18;
         }
     }
 }
+
 .wrap {
     width: 100%;
     height: 100%;
@@ -71,7 +77,6 @@ body{
     background-color: rgba(203, 178, 133, .8);
     overflow: hidden;
     perspective: 1800px;
-
 }
 
 /*海报的样式*/
@@ -86,7 +91,8 @@ body{
         property: all;
         duration: .6s;
         timing-function: ease-in-out;
-    };
+    }
+;
 
     .side {
         width: 100%;
@@ -126,7 +132,7 @@ body{
 
         }
     }
-    .photo-wrap{
+    .photo-wrap {
         background-color: #eeeeee;
     }
 }
@@ -138,7 +144,7 @@ body{
     top: 50%;
     margin: -160px 0 0 -130px;
     z-index: 999;
-    .photo-wrap{
+    .photo-wrap {
         background-color: #ffffff;
     }
 }
@@ -150,7 +156,7 @@ body{
     height: 100%;
     transform-style: preserve-3d;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px  rgba(0, 0, 0, .1);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .1);
     transform-origin: 50% 50%;
     transition: {
         property: all;
@@ -206,7 +212,7 @@ body{
             duration: .5s;
             timing-function: ease;
         }
-        &::after{
+        &::after {
             width: 30px;
             height: 30px;
             content: '\e600';
@@ -222,13 +228,13 @@ body{
             -moz-osx-font-smoothing: grayscale;
         }
     }
-    .i_current{
+    .i_current {
         transform: scale(1);
-        &::after{
+        &::after {
             opacity: 1;
         }
     }
-    .i_back{
+    .i_back {
         transform: rotateY(180deg);
         background-color: #000;
         color: #ffffff;
